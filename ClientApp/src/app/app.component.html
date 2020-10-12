@@ -1,0 +1,221 @@
+<div class="back_color">
+  <div class="header">
+    <h3 class="text-center header_title">PATTYNEXCHANGE</h3>
+  </div>
+  <div class="graphic">
+    <h3 class="text-center graphic_header">graphic with Chart.js ...</h3>
+  </div>
+  <div class="container">
+    <div class="bitpatt_cont">
+      <div class="markets_container">
+        <h3 class="text-center container_header">MARKETS</h3>
+        <div class="sells">
+          <div class="sell_history">
+            <div class="btns_sell_row">
+              <div class="subheaders">
+                <h6 class="container_subheaders">MARKET</h6>
+              </div>
+              <div class="subheaders_r">
+                <h6 class="container_subheaders">24H LOW</h6>
+                <h6 class="container_subheaders">24H HIGH</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bitpatt_cont">
+      <div class="inbox_sell">
+        <h3 class="text-center container_header">SELL ORDERS</h3>
+        <div class="sells">
+          <div class="sell_history">
+            <div class="subheaders">
+              <h6 class="container_subheaders">AMOUNT</h6>
+              <h6 class="container_subheaders">UNITPRICE</h6>
+              <h6 class="container_subheaders">TOTAL PRICE</h6>
+              <h6 class="container_subheaders">TOTAL AMOUNT</h6>
+            </div>
+            <div *ngFor="let bitsell of bitsells">
+              <div class="incoming_sell" *ngIf="bitsell.type == 'received'">
+  
+
+                <div
+                  class="received_withd_sell"
+                  [style.width.%]="16"
+                  [style.margin-left.px]="12"
+                >
+                  <p>{{ bitsell.amount }}.0000</p>
+                </div>
+                <div
+                  class="received_withd_sell"
+                  [style.width.%]="18"
+                  [style.margin-left.px]="14"
+                >
+                  <p>{{ bitsell.unitprice }}.0000</p>
+                </div>
+                <div
+                  class="received_withd_sell"
+                  [style.width.%]="20"
+                  [style.margin-left.px]="12"
+                >
+                  <p>{{ bitsell.total_price }}.0000</p>
+                </div>
+                <div
+                  class="received_withd_sell"
+                  [style.width.%]="24"
+                  [style.margin-left.px]="16"
+                >
+                  <p>{{ bitsell.amount }}.0000</p>
+                </div>
+              </div>
+
+              <div class="outgoing_sell" *ngIf="bitsell.type == 'sent'">
+                
+                <mat-icon class="sent-icon">done_all</mat-icon>
+              
+                <div
+                  class="sent_sell"
+                  [style.width.%]="16"
+                  [style.margin-left.px]="12"
+                >
+                  <p>{{ bitsell.amount }}.0000</p>
+                </div>
+                <div
+                  class="sent_sell"
+                  [style.width.%]="18"
+                  [style.margin-left.px]="14"
+                >
+                  <p>{{ bitsell.unitprice }}.0000</p>
+                </div>
+                <div
+                  class="sent_sell"
+                  [style.width.%]="20"
+                  [style.margin-left.px]="12"
+                >
+                  <p>{{ bitsell.total_price }}.0000</p>
+                </div>
+                <div
+                  class="sent_sell"
+                  [style.width.%]="24"
+                  [style.margin-left.px]="16"
+                >
+                  <p>{{ bitsell.amount }}.0000</p>
+                </div>
+
+                <div class="bottom_sell_sent">
+                  <img
+                    src="https://flaticons.net/icon.php?slug_category=application&slug_icon=user-profile"
+                    height="24"
+                    width="28"
+                  />
+                </div>
+              </div>
+
+              <span class="time_date"> {{ bitsell.date | date: "medium" }}</span>
+            </div>
+          </div>
+
+          <form class="btns_sell_container">
+            <h6 class="btns_header">CREATE A SELL ORDER</h6>
+
+            <mat-form-field class="input_form">
+              <mat-label>AMOUNT</mat-label>
+
+              <input
+                matInput
+                type="number"
+                maxlength="5"
+                [value]="txtAmount"
+                (input)="txtAmount = $event.target.value"
+                (keydown.enter)="sendBitSell()"
+              />
+            </mat-form-field>
+
+            <mat-form-field class="input_form">
+              <mat-label>UNITPRICE</mat-label>
+              <input
+                matInput
+                type="number"
+                maxlength="5"
+                [value]="txtUnit_price"
+                (input)="txtUnit_price = $event.target.value"
+                (keydown.enter)="sendBitSell()"
+              />
+            </mat-form-field>
+
+            <button
+              mat-raised-button
+              type="button"
+              class="sell_send_btn"
+              (click)="sendBitSell()"
+            >
+              <mat-icon>add</mat-icon>SELL
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="bitpatt_cont">
+      <div class="inbox_sell">
+        <h3 class="text-center container_header">BUY ORDERS</h3>
+        <div class="sells">
+          <div class="sell_history">
+            <div class="subheaders">
+              <h6 class="container_subheaders">AMOUNT</h6>
+              <h6 class="container_subheaders">UNITPRICE</h6>
+              <h6 class="container_subheaders">TOTAL PRICE</h6>
+              <h6 class="container_subheaders">TOTAL AMOUNT</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bitpatt_cont">
+      <div class="wallet_container">
+        <h3 class="text-center container_header">BTC WALLET</h3>
+        <div>
+         <div class="btc_sub">
+          <h6 class="btc_subtitles">BALANCE</h6>
+          <h6 class="btc_subtitles" [style.margin-top.px]="18">32.0000</h6>
+        </div>
+     
+  
+          <mat-form-field class="wallet_form">
+            <mat-label>VALUE</mat-label>
+
+            <input
+              matInput
+              type="number"
+              maxlength="5"
+      
+            />
+          </mat-form-field>
+
+          <mat-form-field class="wallet_form">
+            <mat-label>DEPOSIT ADRESS</mat-label>
+            <input
+              matInput
+              type="number"
+              maxlength="5"
+            
+            />
+          </mat-form-field>
+
+          <button
+            mat-raised-button
+            type="button"
+            class="wallet_refresh"
+            (click)="sendBitSell()"
+            
+          >
+            <mat-icon>refresh</mat-icon>REFRESH
+          </button>
+     
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
