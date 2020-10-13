@@ -29,7 +29,7 @@
 
  [CLICK TO VIDEO PREVIEW](https://www.youtube.com/watch?v=I2Z-kVezm2U&feature=youtu.be) <br /> 
 
-  <img src="https://media.giphy.com/media/D3WtpIgYZUy6pfKJoc/giphy.gif"  width="450" height="200"> 
+  <img src="https://media.giphy.com/media/D3WtpIgYZUy6pfKJoc/giphy.gif"> 
 </h1>
 
 
@@ -111,6 +111,23 @@ On PattynExchange folder:
 :5001
 
 ```
+## :eyes:Release History
+
+* 0.1.6 (Next)
+    * Market List
+    * Buy Orders
+    * Wallet Container
+    * SideNav
+    * Authentication Flow
+    * Navigation
+    
+* 0.1.10 (Concluded)
+    * SignalR
+    * Sent,Received -UniqueID
+    * UI base layout
+    * default components
+
+* previous (0.0.7, 0.1.0)
 
 ## 🤔 How to contribute
 
@@ -146,12 +163,6 @@ After your pull request is merged, you can delete your branch
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-<h1 align="center">
-
- [CLICK TO PREVIEW](https://www.youtube.com/watch?v=I2Z-kVezm2U&feature=youtu.be) <br /> 
- 
-</h1>
 
 <h1 align="center">
 Made with 💜&nbsp; by Thomas Reolon 👋 &nbsp;
