@@ -27,7 +27,7 @@
 
 <h1 align="center">
 
- [CLICK TO VIDEO PREVIEW](https://www.youtube.com/watch?v=I2Z-kVezm2U&feature=youtu.be) <br /> 
+ [CLICK HERE TO VIDEO PREVIEW](https://www.youtube.com/watch?v=I2Z-kVezm2U&feature=youtu.be) <br /> 
 
   <img src="https://media.giphy.com/media/D3WtpIgYZUy6pfKJoc/giphy.gif"> 
 </h1>
