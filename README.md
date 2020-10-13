@@ -58,8 +58,8 @@ Technologies that I used to develop this application
 - [Angular Material](https://material.angular.io/) 
 - [Commitlint](https://github.com/conventional-changelog/commitlint)     
 - [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)                      <img align="right" src="https://i.ibb.co/yY44hm4/tt.png" width="500" height="200">
-- [TypeScript](https://www.typescriptlang.org/)
+- [Prettier](https://prettier.io/)                      
+- [TypeScript](https://www.typescriptlang.org/)     <img align="right" src="https://i.ibb.co/KqSmdQH/tt.png" width="500" height="190">
 
 ### :grey_exclamation::grey_exclamation: Requirements
 
