@@ -27,11 +27,9 @@
 
 <h1 align="center">
 
- [CLICK TO PREVIEW](https://www.youtube.com/watch?v=I2Z-kVezm2U&feature=youtu.be) <br /> 
+ [CLICK TO VIDEO PREVIEW](https://www.youtube.com/watch?v=I2Z-kVezm2U&feature=youtu.be) <br /> 
 
-
-<img src="https://i.ibb.co/1KbCzbz/printsc.png">
-  <img src="https://media.giphy.com/media/D3WtpIgYZUy6pfKJoc/giphy.gif"  width="450" height="200">  <img align=right  width="450" height="200" src="https://media.giphy.com/media/fQQJEvMaXYFwjj3YLC/giphy.gif">
+  <img src="https://media.giphy.com/media/D3WtpIgYZUy6pfKJoc/giphy.gif"  width="450" height="200"> 
 </h1>
 
 
