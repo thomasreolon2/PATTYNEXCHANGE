@@ -113,10 +113,14 @@ On PattynExchange folder:
 ```
 ## :eyes:Release History
 
-* 0.1.6 (Next)
+* 0.1.9
+    * Real time Chart.js update from (market values)
+    * Responsiveness
+    * Animations 
+
+* 0.1.6 (Next) 
     * Market List
     * Buy Orders
-    * Wallet Container
     * SideNav
     * Authentication Flow
     * Navigation
