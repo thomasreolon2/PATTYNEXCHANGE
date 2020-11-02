@@ -26,9 +26,7 @@
 </p>
 
 <h1 align="center">
-
- [CLICK HERE TO VIDEO PREVIEW](https://www.youtube.com/watch?v=I2Z-kVezm2U&feature=youtu.be) <br /> 
-
+  
   <a href="https://ibb.co/DGY4cGZ"><img src="https://i.ibb.co/SQcNYQz/test.png" alt="test" border="0"></a>
   <img src="https://media.giphy.com/media/D3WtpIgYZUy6pfKJoc/giphy.gif"> 
 </h1>
