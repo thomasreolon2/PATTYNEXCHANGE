@@ -27,8 +27,6 @@
 
 <h1 align="center">
   
-  <a href="https://ibb.co/DGY4cGZ"><img src="https://i.ibb.co/SQcNYQz/test.png" alt="test" border="0"></a>
-  <img src="https://media.giphy.com/media/D3WtpIgYZUy6pfKJoc/giphy.gif"> 
 </h1>
 
 
